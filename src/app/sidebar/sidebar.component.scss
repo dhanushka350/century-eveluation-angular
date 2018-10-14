@@ -1,0 +1,31 @@
+nav {
+  background: #2185D0;
+  height: 100%;
+  width: 150px;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+
+      a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding-left: 10px;
+        font-weight: bold;
+        font-size: x-small;
+      }
+      a:hover {
+        text-decoration: none;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.2);
+      }
+      .activated {
+        background-color: #00a8ff;
+      }
+    }
+  }
+
+}
