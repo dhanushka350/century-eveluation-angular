@@ -12,11 +12,11 @@ import {LocationComponent} from './location/location.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {DataTableModule} from 'angular-6-datatable';
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
+import {ApprovedProjectsComponent} from './approved-projects/approved-projects.component';
 import {SuiModule} from 'ng2-semantic-ui';
-import {SuiCheckboxModule, SuiRatingModule} from 'ng2-semantic-ui';
-import { RejectedProjectsComponent } from './rejected-projects/rejected-projects.component';
-
-
+import {AreawiseProjectsComponent} from './areawise-projects/areawise-projects.component';
+import {RejectedProjectsComponent} from './rejected-projects/rejected-projects.component';
+import {NewLandComponent} from './new-land/new-land.component';
 
 
 @NgModule({
@@ -25,7 +25,11 @@ import { RejectedProjectsComponent } from './rejected-projects/rejected-projects
     SidebarComponent,
     NavibarComponent,
     LocationComponent,
-    RejectedProjectsComponent],
+    ApprovedProjectsComponent,
+    AreawiseProjectsComponent,
+    NewLandComponent,
+    RejectedProjectsComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

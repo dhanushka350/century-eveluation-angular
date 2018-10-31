@@ -1,0 +1,137 @@
+<div style="margin-left: 20px"><a class="ui teal left ribbon label">Approved Projects</a></div>
+<div style="margin-left: 50px; text-align: right;height: 4px;margin-bottom: 5px;">
+  <button class="ui right labeled icon button teal">
+    <i class="right arrow icon"></i>
+    Create Project
+  </button>
+</div>
+<h4 class="ui dividing header" style="margin-left: 20px"></h4>
+<table class="ui very compact table" style="margin-left: 20px">
+  <thead>
+  <tr>
+    <th>#</th>
+    <th>Land Name</th>
+    <th>Location</th>
+    <th>Created Date</th>
+    <th>Approval Status</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>1</td>
+    <td>Approved</td>
+    <td>Approved</td>
+    <td>None</td>
+    <td>None</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Approved</td>
+    <td>Approved</td>
+    <td>None</td>
+    <td>None</td>
+    <td>None</td>
+  </tr>
+  </tbody>
+</table>
+
+<sui-pagination [collectionSize]="100"
+                [pageSize]="10"
+                [maxSize]="5"
+                [hasEllipses]="true"
+                [canRotate]="true"
+                [(page)]="selectedPage" style="margin-left: 20px;">
+
+</sui-pagination>
+
+<form class="ui form" style="margin-left: 20px">
+  <h4 class="ui dividing header">Shipping Information</h4>
+  <div class="field">
+    <div class="two fields">
+      <div class="field">
+        <div class="ui labeled input">
+          <div class="ui label width" style="font-weight: normal">
+            Land Original Name
+          </div>
+          <input placeholder="Land Original Name" type="text" disabled="disabled">
+        </div>
+      </div>
+
+      <div class="field" style="margin-left: 50px">
+        <div class="ui labeled input">
+          <div class="ui label width" style="font-weight: normal">
+            Project No
+          </div>
+          <input placeholder="Project No" type="text">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="two fields">
+      <div class="field">
+        <div class="ui labeled input">
+          <div class="ui label width" style="font-weight: normal">
+            Location
+          </div>
+          <input placeholder="Location" type="text" disabled="disabled">
+        </div>
+      </div>
+
+      <div class="field" style="margin-left: 50px">
+        <div class="ui labeled input">
+          <div class="ui label width" style="font-weight: normal">
+            Land Sale Name
+          </div>
+          <input placeholder="Land Sale Name" type="text">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="two fields">
+      <div class="field">
+        <div class="ui labeled input">
+          <div class="ui label width" style="font-weight: normal">
+            Starting Date
+          </div>
+          <input placeholder="Starting Date" type="text">
+        </div>
+      </div>
+
+      <div class="field" style="margin-left: 50px">
+        <div class="ui labeled input">
+          <div class="ui label width" style="font-weight: normal">
+            Project Code
+          </div>
+          <input placeholder="Project Code" type="text">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="two fields">
+      <div class="field">
+        <div class="ui labeled input">
+          <div class="ui label width" style="font-weight: normal">
+            No of Lots
+          </div>
+          <input placeholder="Number Of Lots" type="text">
+        </div>
+      </div>
+
+      <div class="field" style="margin-left: 50px;text-align: right">
+        <button class="ui right labeled icon button positive">
+          <i class="right arrow icon"></i>
+          Next
+        </button>
+      </div>
+    </div>
+  </div>
+
+</form>
