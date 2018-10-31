@@ -12,6 +12,11 @@ import {LocationComponent} from './location/location.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {DataTableModule} from 'angular-6-datatable';
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
+import {ApprovedProjectsComponent} from './approved-projects/approved-projects.component';
+import {SuiModule} from 'ng2-semantic-ui';
+import {SuiCheckboxModule, SuiRatingModule} from 'ng2-semantic-ui';
+
+
 
 
 @NgModule({
@@ -19,7 +24,8 @@ import {AngularFontAwesomeModule} from 'angular-font-awesome';
     AppComponent,
     SidebarComponent,
     NavibarComponent,
-    LocationComponent
+    LocationComponent,
+    ApprovedProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +35,8 @@ import {AngularFontAwesomeModule} from 'angular-font-awesome';
     BrowserAnimationsModule,
     DataTableModule,
     AngularFontAwesomeModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    SuiModule
   ],
   providers: [],
   bootstrap: [AppComponent]
