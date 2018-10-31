@@ -14,9 +14,8 @@ import {DataTableModule} from 'angular-6-datatable';
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
 import {ApprovedProjectsComponent} from './approved-projects/approved-projects.component';
 import {SuiModule} from 'ng2-semantic-ui';
-import {SuiCheckboxModule, SuiRatingModule} from 'ng2-semantic-ui';
-
-
+import { AreawiseProjectsComponent } from './areawise-projects/areawise-projects.component';
+import { NewLandComponent } from './new-land/new-land.component';
 
 
 @NgModule({
@@ -25,7 +24,9 @@ import {SuiCheckboxModule, SuiRatingModule} from 'ng2-semantic-ui';
     SidebarComponent,
     NavibarComponent,
     LocationComponent,
-    ApprovedProjectsComponent
+    ApprovedProjectsComponent,
+    AreawiseProjectsComponent,
+    NewLandComponent
   ],
   imports: [
     BrowserModule,
