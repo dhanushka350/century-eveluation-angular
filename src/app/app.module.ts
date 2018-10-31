@@ -14,8 +14,9 @@ import {DataTableModule} from 'angular-6-datatable';
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
 import {ApprovedProjectsComponent} from './approved-projects/approved-projects.component';
 import {SuiModule} from 'ng2-semantic-ui';
-import { AreawiseProjectsComponent } from './areawise-projects/areawise-projects.component';
-import { NewLandComponent } from './new-land/new-land.component';
+import {AreawiseProjectsComponent} from './areawise-projects/areawise-projects.component';
+import {RejectedProjectsComponent} from './rejected-projects/rejected-projects.component';
+import {NewLandComponent} from './new-land/new-land.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { NewLandComponent } from './new-land/new-land.component';
     LocationComponent,
     ApprovedProjectsComponent,
     AreawiseProjectsComponent,
-    NewLandComponent
+    NewLandComponent,
+    RejectedProjectsComponent
   ],
   imports: [
     BrowserModule,
