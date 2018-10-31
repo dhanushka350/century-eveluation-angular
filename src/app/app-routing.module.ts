@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {LocationComponent} from './location/location.component';
-import {ApprovedProjectsComponent} from './approved-projects/approved-projects.component';
+import {RejectedProjectsComponent} from './rejected-projects/rejected-projects.component';
 
 const routes: Routes = [
   {
@@ -9,13 +9,9 @@ const routes: Routes = [
     component: LocationComponent
   },
   {
-    path: 'approved-projects',
-    component: ApprovedProjectsComponent
+    path: 'rejected',
+    component: RejectedProjectsComponent
   },
-  // {
-  //   path: 'posts',
-  //   component: PostsComponent
-  // },
 ];
 
 @NgModule({

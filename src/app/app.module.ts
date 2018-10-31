@@ -12,9 +12,9 @@ import {LocationComponent} from './location/location.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {DataTableModule} from 'angular-6-datatable';
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
-import {ApprovedProjectsComponent} from './approved-projects/approved-projects.component';
 import {SuiModule} from 'ng2-semantic-ui';
 import {SuiCheckboxModule, SuiRatingModule} from 'ng2-semantic-ui';
+import { RejectedProjectsComponent } from './rejected-projects/rejected-projects.component';
 
 
 
@@ -25,8 +25,7 @@ import {SuiCheckboxModule, SuiRatingModule} from 'ng2-semantic-ui';
     SidebarComponent,
     NavibarComponent,
     LocationComponent,
-    ApprovedProjectsComponent
-  ],
+    RejectedProjectsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
