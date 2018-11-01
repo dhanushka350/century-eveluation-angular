@@ -17,7 +17,8 @@ import {SuiModule} from 'ng2-semantic-ui';
 import {AreawiseProjectsComponent} from './areawise-projects/areawise-projects.component';
 import {RejectedProjectsComponent} from './rejected-projects/rejected-projects.component';
 import {NewLandComponent} from './new-land/new-land.component';
-
+import {LocationService} from './services/location.service';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -39,9 +40,10 @@ import {NewLandComponent} from './new-land/new-land.component';
     DataTableModule,
     AngularFontAwesomeModule,
     NgxPaginationModule,
-    SuiModule
+    SuiModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [LocationService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

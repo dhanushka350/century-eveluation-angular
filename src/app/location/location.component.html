@@ -29,48 +29,12 @@
     </th>
   </tr>
   </thead>
-  <tbody>
+  <tbody *ngFor="let location of collection">
   <tr>
     <td class="collapsing">
-      1
+      {{location.id_town}}
     </td>
-    <td>Location</td>
-    <td class="center aligned collapsing" style="cursor: pointer;"><i class="location arrow icon"
-                                                                      style="color: lightseagreen;font-size: medium"></i>
-    </td>
-  </tr>
-  <tr>
-    <td class="collapsing">
-      2
-    </td>
-    <td>Location</td>
-    <td class="center aligned collapsing" style="cursor: pointer;"><i class="location arrow icon"
-                                                                      style="color: lightseagreen;font-size: medium"></i>
-    </td>
-  </tr>
-  <tr>
-    <td class="collapsing">
-      3
-    </td>
-    <td>Location</td>
-    <td class="center aligned collapsing" style="cursor: pointer;"><i class="location arrow icon"
-                                                                      style="color: lightseagreen;font-size: medium"></i>
-    </td>
-  </tr>
-  <tr>
-    <td class="collapsing">
-      4
-    </td>
-    <td>Location</td>
-    <td class="center aligned collapsing" style="cursor: pointer;"><i class="location arrow icon"
-                                                                      style="color: lightseagreen;font-size: medium"></i>
-    </td>
-  </tr>
-  <tr>
-    <td class="collapsing">
-      5
-    </td>
-    <td>Location</td>
+    <td>{{location.name}}</td>
     <td class="center aligned collapsing" style="cursor: pointer;"><i class="location arrow icon"
                                                                       style="color: lightseagreen;font-size: medium"></i>
     </td>
