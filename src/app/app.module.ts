@@ -19,6 +19,9 @@ import {RejectedProjectsComponent} from './rejected-projects/rejected-projects.c
 import {NewLandComponent} from './new-land/new-land.component';
 import {LocationService} from './services/location.service';
 import {HttpClientModule} from '@angular/common/http';
+import {BrokerListComponent} from './broker-list/broker-list.component';
+import {SalesOfficersComponent} from './sales-officers/sales-officers.component';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import {NotifierModule} from 'angular-notifier';
 
 @NgModule({
@@ -30,7 +33,9 @@ import {NotifierModule} from 'angular-notifier';
     ApprovedProjectsComponent,
     AreawiseProjectsComponent,
     NewLandComponent,
-    RejectedProjectsComponent
+    RejectedProjectsComponent,
+    BrokerListComponent,
+    SalesOfficersComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +49,7 @@ import {NotifierModule} from 'angular-notifier';
     NgxPaginationModule,
     SuiModule,
     HttpClientModule,
+    BsDatepickerModule.forRoot(),
     NotifierModule.withConfig({
       position: {
 

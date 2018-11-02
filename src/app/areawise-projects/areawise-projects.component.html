@@ -8,7 +8,7 @@
           <div class="ui label width" style="font-weight: normal">
             Area
           </div>
-          <input type="text">
+          <input placeholder="Enter Area" type="text">
         </div>
       </div>
 
@@ -17,7 +17,7 @@
           <div class="ui label width" style="font-weight: normal">
             Total No of Lots
           </div>
-          <input type="text">
+          <input placeholder="Total No of Lots" type="text">
         </div>
       </div>
     </div>
@@ -30,7 +30,7 @@
           <div class="ui label width" style="font-weight: normal">
             Developer
           </div>
-          <input type="text">
+          <input placeholder="Enter Developer" type="text">
         </div>
       </div>
 
@@ -39,7 +39,7 @@
           <div class="ui label width" style="font-weight: normal">
             Unsold Lots
           </div>
-          <input type="text">
+          <input placeholder="Unsold Lots" type="text">
         </div>
       </div>
     </div>
@@ -52,14 +52,15 @@
           <div class="ui label width" style="font-weight: normal">
             Project Name
           </div>
-          <input type="text">
+          <input placeholder="Enter Project Name" type="text">
         </div>
       </div>
       <div class="field" style="margin-left: 50px;">
         <div class="ui labeled input">
           <div class="ui label width" style="font-weight: normal">Commenced Date
           </div>
-          <input type="text">
+          <input type="text" bsDatepicker [bsConfig]="{ dateInputFormat: 'MMMM Do YYYY, h:mm:ss a' }"
+                 placeholder="MM/DD/YYYY">
         </div>
       </div>
     </div>
@@ -76,7 +77,7 @@
 
       <div class="field" style="margin-left: 50px;">
         <div class="ui labeled input">
-          <div class="ui label" style="font-weight: normal; height: 50%;">
+          <div class="ui label width" style="font-weight: normal; height: 50%;">
             Remarks
           </div>
           <textarea style="height: 50%;"></textarea>
@@ -109,21 +110,8 @@
     <td>None</td>
     <td>None</td>
     <td>
-      <button class="mini ui button teal">
-          Edit
-      </button>
-    </td>
-  </tr>
-  <tr>
-    <td>John</td>
-    <td>Approved</td>
-    <td>None</td>
-    <td>None</td>
-    <td>None</td>
-    <td>None</td>
-    <td>None</td>
-    <td>
-      <button class="mini ui button teal">
+      <button class="mini ui blue inverted button">
+        <i class="pencil alternate icon"></i>
         Edit
       </button>
     </td>
@@ -137,7 +125,8 @@
     <td>None</td>
     <td>None</td>
     <td>
-      <button class="mini ui button teal">
+      <button class="mini ui blue inverted button">
+        <i class="pencil alternate icon"></i>
         Edit
       </button>
     </td>
@@ -151,7 +140,8 @@
     <td>None</td>
     <td>None</td>
     <td>
-      <button class="mini ui button teal">
+      <button class="mini ui blue inverted button">
+        <i class="pencil alternate icon"></i>
         Edit
       </button>
     </td>
@@ -165,7 +155,23 @@
     <td>None</td>
     <td>None</td>
     <td>
-      <button class="mini ui button teal">
+      <button class="mini ui blue inverted button">
+        <i class="pencil alternate icon"></i>
+        Edit
+      </button>
+    </td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Approved</td>
+    <td>None</td>
+    <td>None</td>
+    <td>None</td>
+    <td>None</td>
+    <td>None</td>
+    <td>
+      <button class="mini ui blue inverted button">
+        <i class="pencil alternate icon"></i>
         Edit
       </button>
     </td>

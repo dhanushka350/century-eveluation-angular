@@ -14,7 +14,7 @@
     <th>Location</th>
     <th>Created Date</th>
     <th>Approval Status</th>
-    <th></th>
+    <th>Action</th>
   </tr>
   </thead>
   <tbody>
@@ -24,7 +24,10 @@
     <td>Approved</td>
     <td>None</td>
     <td>None</td>
-    <td>None</td>
+    <button class="mini ui red inverted button">
+      <i class="eraser icon"></i>
+      Remove
+    </button>
   </tr>
   <tr>
     <td>1</td>
@@ -32,7 +35,10 @@
     <td>Approved</td>
     <td>None</td>
     <td>None</td>
-    <td>None</td>
+    <button class="mini ui red inverted button">
+      <i class="eraser icon"></i>
+      Remove
+    </button>
   </tr>
   </tbody>
 </table>
@@ -99,7 +105,8 @@
           <div class="ui label width" style="font-weight: normal">
             Starting Date
           </div>
-          <input placeholder="Starting Date" type="text">
+          <input placeholder="MM/DD/YYYY" type="text" bsDatepicker
+                 [bsConfig]="{ dateInputFormat: 'MMMM Do YYYY, h:mm:ss a' }">
         </div>
       </div>
 

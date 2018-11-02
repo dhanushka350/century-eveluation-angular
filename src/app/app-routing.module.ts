@@ -4,6 +4,8 @@ import {LocationComponent} from './location/location.component';
 import {ApprovedProjectsComponent} from './approved-projects/approved-projects.component';
 import {AreawiseProjectsComponent} from './areawise-projects/areawise-projects.component';
 import {RejectedProjectsComponent} from './rejected-projects/rejected-projects.component';
+import {BrokerListComponent} from './broker-list/broker-list.component';
+import {SalesOfficersComponent} from './sales-officers/sales-officers.component';
 
 const routes: Routes = [
   {
@@ -21,6 +23,14 @@ const routes: Routes = [
   {
     path: 'rejected',
     component: RejectedProjectsComponent
+  },
+  {
+    path: 'broker',
+    component: BrokerListComponent
+  },
+  {
+    path: 'salesOfficers',
+    component: SalesOfficersComponent
   },
 ];
 
