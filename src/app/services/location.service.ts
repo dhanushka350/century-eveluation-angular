@@ -13,6 +13,10 @@ export class LocationService {
 
   getLocations(): Observable<ILocation[]> {
     console.log('getting');
-    return this.http.get<ILocation[]>('/api/all/locations');
+    return this.http.get<ILocation[]>('http://localhost:8080/all/locations');
+  }
+
+  saveLocations(location: string) {
+    return this.http.post('http://localhost:8080/save/locations', location);
   }
 }

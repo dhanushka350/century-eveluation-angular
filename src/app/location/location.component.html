@@ -6,11 +6,11 @@
         <div class="ui label width" style="font-weight: normal">
           Location
         </div>
-        <input placeholder="Location" type="text">
+        <input #location class="form-control" type="text">
       </div>
       <div class="field">
         <div class="field" style="text-align: left">
-          <button class="ui right labeled icon button positive">
+          <button (click)="onSubmit(location.value)" class="ui right labeled icon button positive">
             <i class="right save icon"></i>
             Submit
           </button>
@@ -18,7 +18,6 @@
       </div>
     </div>
   </div>
-
 </form>
 
 <table class="ui compact table" style="margin-left: 20px">

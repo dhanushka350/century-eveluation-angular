@@ -19,6 +19,7 @@ import {RejectedProjectsComponent} from './rejected-projects/rejected-projects.c
 import {NewLandComponent} from './new-land/new-land.component';
 import {LocationService} from './services/location.service';
 import {HttpClientModule} from '@angular/common/http';
+import {NotifierModule} from 'angular-notifier';
 
 @NgModule({
   declarations: [
@@ -34,14 +35,34 @@ import {HttpClientModule} from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
     ReactiveFormsModule,
+    ReactiveFormsModule,
+    FormsModule,
     BrowserAnimationsModule,
     DataTableModule,
     AngularFontAwesomeModule,
     NgxPaginationModule,
     SuiModule,
-    HttpClientModule
+    HttpClientModule,
+    NotifierModule.withConfig({
+      position: {
+
+        horizontal: {
+
+          position: 'right',
+          distance: 12
+
+        },
+
+        vertical: {
+          position: 'bottom',
+          distance: 12,
+          gap: 10
+
+        }
+
+      }
+    })
   ],
   providers: [LocationService],
   bootstrap: [AppComponent]
